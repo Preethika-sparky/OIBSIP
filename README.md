@@ -1,10 +1,10 @@
 # Car Price Prediction with Machine Learning
 
-## 📌 Project Overview
+## Project Overview
 
 This project focuses on predicting the selling price of used cars using machine learning techniques. The project includes exploratory data analysis, data preprocessing, regression model development, model evaluation, and feature importance analysis.
 
-## 🎯 Objectives
+## Objectives
 
 - Analyze the used car dataset and understand important patterns.
 - Identify factors that influence car selling prices.
@@ -14,7 +14,7 @@ This project focuses on predicting the selling price of used cars using machine 
 - Select the best-performing model for car price prediction.
 - Save the final trained model for future predictions.
 
-## 📊 Dataset
+## Dataset
 
 The project uses a CarDekho vehicle dataset containing 15,411 records and 14 columns.
 
@@ -35,7 +35,7 @@ The project uses a CarDekho vehicle dataset containing 15,411 records and 14 col
 - `max_power`
 - `seats`
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - Python
 - Pandas
@@ -46,7 +46,7 @@ The project uses a CarDekho vehicle dataset containing 15,411 records and 14 col
 - Jupyter Notebook
 - Joblib
 
-## 🔍 Exploratory Data Analysis
+## Exploratory Data Analysis
 
 The dataset was analyzed using descriptive statistics and visualizations to understand:
 
@@ -56,7 +56,7 @@ The dataset was analyzed using descriptive statistics and visualizations to unde
 - Potential outliers and unusual values
 - Important patterns within the dataset
 
-## ⚙️ Data Preprocessing
+## Data Preprocessing
 
 The preprocessing workflow included:
 
@@ -68,14 +68,14 @@ The preprocessing workflow included:
 - Standardizing numerical features
 - One-hot encoding categorical features
 
-## 🤖 Machine Learning Models
+## Machine Learning Models
 
 Two regression models were trained and evaluated:
 
 1. Linear Regression
 2. Random Forest Regression
 
-## 📈 Model Evaluation
+## Model Evaluation
 
 | Model | MAE | RMSE | R² |
 |---|---:|---:|---:|
@@ -86,7 +86,7 @@ Random Forest Regression achieved the best overall performance, with lower MAE a
 
 Therefore, Random Forest was selected as the final model.
 
-## 🔑 Feature Importance
+## Feature Importance
 
 The Random Forest feature importance analysis showed that:
 
@@ -98,15 +98,17 @@ Several categorical features, including transmission type and specific brands/mo
 
 Feature importance indicates how much the model relies on a feature for prediction; it does not imply that the feature directly causes the selling price.
 
-## 💾 Saved Model
+## Model Persistence
 
-The final Random Forest pipeline was saved using Joblib:
+The trained Random Forest pipeline was saved locally using Joblib as:
 
 `Models/car_price_prediction.pkl`
 
-The saved pipeline contains both the preprocessing steps and the trained Random Forest model, allowing it to be reused for future predictions.
+The model file is excluded from the Git repository because it exceeds GitHub's standard file-size limit.
 
-## 📁 Project Structure
+The notebook can be executed to retrain and recreate the model.
+
+## Project Structure
 
 ```text
 Car-price-prediction/
@@ -126,15 +128,35 @@ Car-price-prediction/
 ├── README.md
 └── requirements.txt
 
+How to Run
 
----
-
-## Step 10 — How to run
-
-```markdown
-## ▶️ How to Run
-
-### 1. Clone the repository
-
-```bash
+1. Clone the repository
 git clone https://github.com/Preethika-sparky/OIBSIP.git
+
+2. Navigate to the repository
+cd OIBSIP
+
+3. Create a virtual environment
+python -m venv .venv
+
+4. Activate the environment
+
+For Windows PowerShell:
+.\.venv\Scripts\Activate.ps1
+
+5. Install dependencies
+pip install -r requirements.txt
+
+6. Open the notebook
+
+Open:
+
+Notebooks/car_price_prediction.ipynb
+
+Run the notebook cells to perform the analysis, train the models, evaluate them, and recreate the model.
+
+Conclusion
+
+This project demonstrates an end-to-end machine learning workflow for used car price prediction, from exploratory data analysis and preprocessing to model training, evaluation, feature importance analysis, and model persistence.
+
+Random Forest Regression provided the best performance among the evaluated models, achieving an R² score of approximately 0.938.
