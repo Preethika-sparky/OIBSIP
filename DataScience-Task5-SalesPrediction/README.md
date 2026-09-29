@@ -1,7 +1,5 @@
 # Sales Prediction Using Python
 
-## OIBSIP Data Science - Task 5
-
 ### Project Overview
 
 This project focuses on analyzing the relationship between advertising expenditure and sales and building machine learning models to predict sales.
