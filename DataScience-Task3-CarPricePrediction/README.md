@@ -128,35 +128,4 @@ Car-price-prediction/
 ├── README.md
 └── requirements.txt
 
-How to Run
-
-1. Clone the repository
-git clone https://github.com/Preethika-sparky/OIBSIP.git
-
-2. Navigate to the repository
-cd OIBSIP
-
-3. Create a virtual environment
-python -m venv .venv
-
-4. Activate the environment
-
-For Windows PowerShell:
-.\.venv\Scripts\Activate.ps1
-
-5. Install dependencies
-pip install -r requirements.txt
-
-6. Open the notebook
-
-Open:
-
-Notebooks/car_price_prediction.ipynb
-
-Run the notebook cells to perform the analysis, train the models, evaluate them, and recreate the model.
-
-Conclusion
-
-This project demonstrates an end-to-end machine learning workflow for used car price prediction, from exploratory data analysis and preprocessing to model training, evaluation, feature importance analysis, and model persistence.
-
-Random Forest Regression provided the best performance among the evaluated models, achieving an R² score of approximately 0.938.
+ 
